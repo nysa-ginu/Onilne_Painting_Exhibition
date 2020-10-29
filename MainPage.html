@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Main Page</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  padding: 80px;
+  text-align: center;
+  /* background: #1abc9c; */
+  color: white;
+  background-image: url("bg.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header_text{
+	background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  height:150px;
+  padding: 20px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden; 
+  background-color: #333; 
+}
+
+
+.navbar a {
+  float: left;
+  display: block; 
+  color: white;
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none;
+  width: 25%;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #FFDAB9; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: #c8a2c8; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+
+.mainimg{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="header"></div>
+<div class="header_text">
+  <h1>Blah Blah Painting Exhibition</h1>
+  <p>All the sought-after paintings just a click away.</p>
+</div>
+<div class="navbar">
+  <a href="LDV.html">Leonardo Da Vinci</a>
+  <a href="VVG.html">Vincent Van Gogh</a>
+  <a href="JV.html">Johannes Vermeer</a>
+  <a href="AA.html">Albrecht Altdorfer</a>
+</div>
+<div class="row">
+  <div class="side">
+  	<h2 style="color: #c8a2c8">About The Curator:</h2>
+    <img src="curator.jpg" alt="Image of the curator" width=200px height=200px>
+    <p>A doctoral degree gold medalist in art history from University of Cambridge and have been working with Victoria and Albert Museum in London for the past 17 years.</p>
+    <h3 style="color: #c8a2c8">Favourite Paintings:</h3>
+    <p>Our Curator has very unique taste in painting with array of contemporary and abstract paintings.</p>
+    <img src="tuscany.jpg" alt="Tuscany" width=350px height=200px>
+    <img src="girl in the river.jpg" alt="Girl in the river" width=200px height=200px>
+    <img src="girls.jpg" alt="girls" width=200px height=200px>
+  </div>
+  <div class="main">
+  	<p style="background-color: #D8BFD8">During such unprecedented times when we have to practice social distancing, organizing a proper exhibition can be very challenging. But worry not, we bring to you the Blah Blah's virtual painting exhibition where you can view all the famous paintings from around the world without leaving the safety and comfort of your home. <br>
+  	We sincerely hope that you love this as much as the traditional exhibition and enjoy it as much as our team did in creating it.</p>
+  	<h2 style="color: #554e6e;">Most Popular Paintings:</h2>
+  	<a href="monalisa.html"><img src="monalisaLDV.jpg" class="mainimg"></a>
+  	<h4 style="color: #554e6e; text-align: center;">Mona Lisa by Leonardo da Vinci</h4>
+  	<a href="starrynight.html"><img src="starrynightVVG.jpg" class="mainimg"></a>
+    <h4 style="color: #554e6e; text-align: center;">The Starry Night by Vincent van Gogh</h4>
+    <a href="girlpearl.html"><img src="girlpearlJV.jpg" class="mainimg"></a>
+    <h4 style="color: #554e6e; text-align: center;">Girl with a Pearl Earring by Johannes Vermeer</h4>
+     <a href="battle.html"><img src="battleAA.jpg" class="mainimg"></a>
+    <h4 style="color: #554e6e; text-align: center;">The Battle of Alexander at Issus by Albrecht Altdorfer</h4>
+  </div>
+</div>
+<div class="footer">
+  <h2 style="text-align: center;">Made by Nysa.P.Ginu(RA1711003010585) for Web Programming Lab 15IT304J.</h2>
+</div>
+</body>
+</html>

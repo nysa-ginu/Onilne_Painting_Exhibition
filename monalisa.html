@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>mona lisa</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  padding: 80px;
+  text-align: center;
+  /* background: #1abc9c; */
+  color: white;
+  background-image: url("bg.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header_text{
+	background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  height:150px;
+  padding: 20px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden; 
+  background-color: #333; 
+}
+
+
+.navbar a {
+  float: left;
+  display: block; 
+  color: white;
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none;
+  width: 25%;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #FFDAB9; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: #c8a2c8; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+
+.LDVimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="header"></div>
+<div class="header_text">
+  <h1>Blah Blah Painting Exhibition</h1>
+  <p>All the sought-after paintings just a click away.</p>
+</div>
+<div class="navbar">
+  <a href="LDV.html">Leonardo Da Vinci</a>
+  <a href="VVG.html">Vincent Van Gogh</a>
+  <a href="JV.html">Johannes Vermeer</a>
+  <a href="AA.html">Albrecht Altdorfer</a>
+</div>
+<div class="row">
+  <div class="side">
+  	<h2 style="color: #c8a2c8">About The Curator:</h2>
+    <img src="curator.jpg" alt="Image of the curator" width=200px height=200px>
+    <p>A doctoral degree gold medalist in art history from University of Cambridge and have been working with Victoria and Albert Museum in London for the past 17 years.</p>
+    <h3 style="color: #c8a2c8">Favourite Paintings:</h3>
+    <p>Our Curator has very unique taste in painting with array of contemporary and abstract paintings.</p>
+    <img src="tuscany.jpg" alt="Tuscany" width=350px height=200px>
+    <img src="girl in the river.jpg" alt="Girl in the river" width=200px height=200px>
+    <img src="girls.jpg" alt="girls" width=200px height=200px>
+  </div>
+  <div class="main">
+    <img src="monalisaLDV.jpg" class="LDVimg">
+    <h2 style="color: #554e6e; text-align: center;">Mona Lisa</h2>
+    <p>Mona Lisa, also called Portrait of Lisa Gherardini, wife of Francesco del Giocondo, Italian La Gioconda, or French La Joconde, oil painting on a poplar wood panel by Leonardo da Vinci, probably the world’s most famous painting. It was painted sometime between 1503 and 1519, when Leonardo was living in Florence, and it now hangs in the Louvre Museum, in Paris, where it remained an object of pilgrimage in the 21st century. The sitter’s mysterious smile and her unproven identity have made the painting a source of ongoing investigation and fascination<br>
+    Leonardo da Vinci began painting the Mona Lisa about 1503, and it was in his studio when he died in 1519. He likely worked on it intermittently over several years, adding multiple layers of thin oil glazes at different times. Small cracks in the paint, called craquelure, appear throughout the whole piece, but they are finer on the hands, where the thinner glazes correspond to Leonardo’s late period.<br>
+    French King Francis I, in whose court Leonardo spent the last years of his life, acquired the work after the artist’s death, and it became part of the royal collection. For centuries the portrait was secluded in French palaces, until insurgents claimed the royal collection as the property of the people during the French Revolution (1787–99). Following a period hanging in Napoleon’s bedroom, the Mona Lisa was installed in the Louvre Museum at the turn of the 19th century.<br>
+    In 1911 the painting was stolen, causing an immediate media sensation. People flocked to the Louvre to view the empty space where the painting had once hung, the museum’s director of paintings resigned, and the poet Guillaume Apollinaire and artist Pablo Picasso were even arrested as suspects. Two years later an art dealer in Florence alerted local authorities that a man had tried to sell him the painting. Police found the portrait stashed in the false bottom of a trunk belonging to Vincenzo Peruggia, an Italian immigrant who had briefly worked at the Louvre fitting glass on a selection of paintings, including the Mona Lisa. He and two other workers had taken the portrait from the wall, hid with it in a closet overnight, and ran off with it in the morning. Peruggia was arrested, tried, and imprisoned, while the Mona Lisa took a tour of Italy before making its triumphant return to France.<br>
+    During World War II the Mona Lisa, singled out as the most-endangered artwork in the Louvre, was evacuated to various locations in France’s countryside, returning to the museum in 1945 after peace had been declared. It later traveled to the United States in 1963, drawing about 40,000 people per day during its six-week stay at the Metropolitan Museum of Art in New York City and at the National Gallery of Art in Washington, D.C. It also toured to Tokyo and Moscow in 1974.<br>
+    </p><br><br><br>
+    <div style="text-align: center;">
+    <a href="LDV.html" style="text-align: center;"><<--back--</a><br><br>
+    <a href="MainPage.html"><<--back to home--</a>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2 style="text-align: center;">Made by Nysa.P.Ginu(RA1711003010585) for Web Programming Lab 15IT304J.</h2>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login Page</title>
+		<script type="text/javascript">
+		function VALIDAT()
+		{
+			var logi = document.forms["SignForm"]["loginid"];
+			var pass = document.forms["SignForm"]["pwd"];
+
+			if(logi.value == "")
+			{
+				window.alert('Please enter your login id.');
+				logi.focus();
+				return false;
+			}
+			if(pass.value == "")
+			{
+				window.alert('Please enter your Password.');
+				pass.focus();
+				return false;
+			}
+			return true;
+		}
+	</script>
+		<style type="text/css">
+			 table.center {
+   				 margin-left:auto; 
+    			 margin-right:auto;
+ 				 }
+			 button.subtn {
+  				background-color: #FFDAB9;
+  				border: none;
+  				color: white;
+  				padding: 16px 32px;
+  				text-align: center;
+  				font-size: 16px;
+  				margin: 4px 2px;
+  				opacity: 1;
+  				transition: 0.3s;
+  				color: #554e6e;
+				}
+			 button.subtn:hover {
+			 	background-color: #FFB6C1;
+			 	color: #C71585;
+			 }
+			 body {
+			 	background-image: url('https://images.vexels.com/media/users/3/100865/preview2/744744b3fd714e6b8f37c0f4237402ae-abstract-drip-painting-background-vector.jpg');
+			 	background-attachment: fixed;
+  				background-size: cover;
+			 }
+			 table {
+  					background-color: #c8a2c8;
+  					color: white;
+  					border-collapse: collapse;
+  					font-size: large;
+			 	}
+			 td {
+  					padding: 15px;
+ 					text-align: left;
+ 				}
+		</style>
+	</head>
+	<body>
+		<header style="text-align: center;"><b>BLAh Blah Painting Exhibition</b></header>
+
+
+		<H2 style="text-align: center;">Login Page</H2>
+
+		
+		
+			<form name="SignForm" action="login.php" onsubmit="return VALIDAT()" method="POST">
+				<table class="center">
+					<tr>
+						<td><b>Login Id:</b></td><td><input type="text" name="loginid"></td>
+					</tr>
+					<tr>
+						<td><b>Password:</b></td><td><input type="Password" name="pwd"></td>
+					</tr>
+					<tr>
+						<td><button type="submit" value="Submit" name="login-submit" class="subtn"><b>Submit</b></button></td><td><b>Not Registered yet?</b><a href="signup.html"><b>Sign Up</b></a></td>
+					</tr>
+				</table>
+				<?php
+				include "signup.php";
+
+				?>
+			</form>
+		
+	</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>last supper</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  padding: 80px;
+  text-align: center;
+  /* background: #1abc9c; */
+  color: white;
+  background-image: url("bg.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header_text{
+	background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  height:150px;
+  padding: 20px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden; 
+  background-color: #333; 
+}
+
+
+.navbar a {
+  float: left;
+  display: block; 
+  color: white;
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none;
+  width: 25%;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #FFDAB9; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: #c8a2c8; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+
+.LDVimg{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="header"></div>
+<div class="header_text">
+  <h1>Blah Blah Painting Exhibition</h1>
+  <p>All the sought-after paintings just a click away.</p>
+</div>
+<div class="navbar">
+  <a href="LDV.html">Leonardo Da Vinci</a>
+  <a href="VVG.html">Vincent Van Gogh</a>
+  <a href="JV.html">Johannes Vermeer</a>
+  <a href="AA.html">Albrecht Altdorfer</a>
+</div>
+<div class="row">
+  <div class="side">
+  	<h2 style="color: #c8a2c8">About The Curator:</h2>
+    <img src="curator.jpg" alt="Image of the curator" width=200px height=200px>
+    <p>A doctoral degree gold medalist in art history from University of Cambridge and have been working with Victoria and Albert Museum in London for the past 17 years.</p>
+    <h3 style="color: #c8a2c8">Favourite Paintings:</h3>
+    <p>Our Curator has very unique taste in painting with array of contemporary and abstract paintings.</p>
+    <img src="tuscany.jpg" alt="Tuscany" width=350px height=200px>
+    <img src="girl in the river.jpg" alt="Girl in the river" width=200px height=200px>
+    <img src="girls.jpg" alt="girls" width=200px height=200px>
+  </div>
+  <div class="main">
+    <img src="lastsupperLDV.jpg" class="LDVimg">
+    <h4 style="color: #554e6e; text-align: center;">The Last Supper</h4>
+    <p>
+      Last Supper, Italian Cenacolo, one of the most famous artworks in the world, painted by Leonardo da Vinci probably between 1495 and 1498 for the Dominican monastery Santa Maria delle Grazie in Milan. It depicts the dramatic scene described in several closely connected moments in the Gospels, including Matthew 26:21–28, in which Jesus declares that one of the Apostles will betray him and later institutes the Eucharist. According to Leonardo’s belief that posture, gesture, and expression should manifest the “notions of the mind,” each one of the 12 disciples reacts in a manner that Leonardo considered fit for that man’s personality. The result is a complex study of varied human emotion, rendered in a deceptively simple composition.<br>
+      The wall painting was commissioned by Ludovico Sforza, the duke of Milan and Leonardo’s patron during his first extended stay in that city. The Sforza coats of arms appear with the family’s initials on the three lunettes above the mural. Leonardo likely began working on the painting in 1495 and, as was his manner, worked slowly with long pauses between sessions, until he finished in 1498. Because of Leonardo’s notorious perfectionism, true fresco painting was not ideal, as the process requires that an artist apply paint quickly to each day’s fresh plaster before the plaster dries and bonds the pigment to the wall. Instead, Leonardo tried an experimental technique using tempera or oil paint on two layers of dry preparatory ground. His compromised process meant that the pigments were not permanently attached to the wall, however, and the painting began to flake within a few years. It continued to deteriorate, suffering from the steam and smoke of the monastery’s kitchen, soot from the refectory’s candles, and the dampness of the location.<br>
+      In the ensuing centuries, the painting sustained additional damage. In 1652 a door was cut into the north wall, removing Jesus’ feet and loosening the paint and plaster. Several restorations followed, with heavy-handed retouches and the application of varnish, glue, solvents, and the like. The painting endured additional irreverence when Napoleon’s invading troops used the refectory as a stable. After a flood in the beginning of the 19th century, mold growth damaged the painting further still. During World War II the painting suffered its greatest catastrophe, when an Allied bomb caused the roof and one wall of the refectory to collapse. The painting survived, but it was exposed to the elements for several months before the space was rebuilt.<br>
+      After centuries of maltreatment, the Last Supper underwent an extensive and controversial 20-year restoration that was completed in 1999. Restorers worked in small sections to remove previous retouches, layers of grime, and coats of varnish while adding beige watercolour to the parts that could not be recovered. When the restored painting was revealed, many critics argued that the restorers had removed so much of the painting that very little was left of Leonardo’s original work. Others, however, commended the recovery of such details as the Apostles’ expressions and the food on the table.<br>
+    </p><br><br><br>
+    <div style="text-align: center;">
+    <a href="LDV.html" style="text-align: center;"><<--back--</a><br><br>
+    <a href="MainPage.html"><<--back to home--</a>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2 style="text-align: center;">Made by Nysa.P.Ginu(RA1711003010585) for Web Programming Lab 15IT304J.</h2>
+</body>
+</html>

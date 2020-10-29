@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp Page</title>
+	<script type="text/javascript">
+		function VALIDAT()
+		{
+			var logi = document.forms["SignForm"]["loginid"];
+			var pass = document.forms["SignForm"]["pwd"];
+			var gen = document.getElementsByName("gender");
+			var mail = document.forms["SignForm"]["email"];
+			var Valid = false;
+			var i=0;
+
+			if(logi.value == "")
+			{
+				window.alert('Please enter your login id.');
+				logi.focus();
+				return false;
+			}
+			if(pass.value == "")
+			{
+				window.alert('Please enter your Password.');
+				pass.focus();
+				return false;
+			}
+		    while (!Valid && i < gen.length)
+		    {
+		    	if (gen[i].checked) Valid = true;
+		    	i++;
+		    }
+		    if (!Valid) window.alert("Please select a gender.");
+		    return Valid;
+
+			if(mail.value == "")
+			{
+				window.alert('Please enter your email id.');
+				mail.focus();
+				return false;
+			}
+			return true;
+		}
+	</script>
+	<style type="text/css">
+			 table.center {
+   				 margin-left:auto; 
+    			 margin-right:auto;
+ 				 }
+			 button.subtn {
+  				background-color: #FFDAB9;
+  				border: none;
+  				color: white;
+  				padding: 16px 32px;
+  				text-align: center;
+  				font-size: 16px;
+  				margin: 4px 2px;
+  				opacity: 1;
+  				transition: 0.3s;
+  				color: #554e6e;
+				}
+			 button.subtn:hover {
+			 	background-color: #FFB6C1;
+			 	color: #C71585;
+			 }
+			 body {
+			 	background-image: url('https://images.vexels.com/media/users/3/100865/preview2/744744b3fd714e6b8f37c0f4237402ae-abstract-drip-painting-background-vector.jpg');
+			 	background-attachment: fixed;
+  				background-size: cover;
+			 }
+			 table {
+  					background-color: #c8a2c8;
+  					color: white;
+  					border-collapse: collapse;
+  					font-size: large;
+			 	}
+			 td {
+  					padding: 15px;
+ 					text-align: left;
+ 				}
+		</style>
+</head>
+<body>
+	<header style="text-align: center;"><b>BLAh Blah Painting Exhibition</b></header>
+
+	<H2 style="text-align: center;">Sign Up Page</H2>
+
+		
+		
+			<form name="SignForm" action="signup.php" onsubmit="return VALIDAT()" method="POST">
+				<table class="center">
+					<tr>
+						<td>Login Name:</td><td><input type="text" name="loginid" placeholder="loginIdI"></td>
+					</tr>
+					<tr>
+						<td>Password:</td><td><input type="Password" name="pwd" placeholder="passwordI"></td>
+					</tr>
+					<tr>
+						<td>Gender:</td><td><input type="radio" name="gender" placeholder="genderI" value="male">Male  <input type="radio" name="gender" placeholder="genderI" value="female">Female  <input type="radio" name="gender" placeholder="genderI" value="other">Other </td>
+					</tr>
+					<tr>
+						<td>Email Id:</td><td><input type="text" name="email" placeholder="emailI"></td>
+					</tr>
+					<tr>
+						<td><button type="submit" value="signup" name="signup-submit" class="subtn">SignUp</button></td><td>Registered already?<a href="login.html">Log In</a></td>
+					</tr>
+				</table>
+			</form>
+</body>
+</html>

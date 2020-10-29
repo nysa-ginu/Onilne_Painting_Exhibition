@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Johannes Vermeer</title>
+	<style type="text/css">
+	body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  padding: 80px;
+  text-align: center;
+  /* background: #1abc9c; */
+  color: white;
+  background-image: url("bg.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header_text{
+	background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  height:150px;
+  padding: 20px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden; 
+  background-color: #333; 
+}
+
+
+.navbar a {
+  float: left;
+  display: block; 
+  color: white;
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none;
+  width: 25%;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #FFDAB9; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: #c8a2c8; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+
+.JVimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+</style>
+</head>
+<body>
+	<div class="header"></div>
+<div class="header_text">
+  <h1>Blah Blah Painting Exhibition</h1>
+  <p>All the sought-after paintings just a click away.</p>
+</div>
+<div class="navbar">
+  <a href="LDV.html">Leonardo Da Vinci</a>
+  <a href="VVG.html">Vincent Van Gogh</a>
+  <a href="MainPage.html">Back To Home</a>
+  <a href="AA.html">Albrecht Altdorfer</a>
+</div>
+<div class="row">
+  <div class="side">
+  	<h2 style="color: #c8a2c8">About The Curator:</h2>
+    <img src="curator.jpg" alt="Image of the curator" width=200px height=200px>
+    <p>A doctoral degree gold medalist in art history from University of Cambridge and have been working with Victoria and Albert Museum in London for the past 17 years.</p>
+    <h3 style="color: #c8a2c8">Favourite Paintings:</h3>
+    <p>Our Curator has very unique taste in painting with array of contemporary and abstract paintings.</p>
+    <img src="tuscany.jpg" alt="Tuscany" width=350px height=200px>
+    <img src="girl in the river.jpg" alt="Girl in the river" width=200px height=200px>
+    <img src="girls.jpg" alt="girls" width=200px height=200px>
+  </div>
+  <div class="main">
+    <h2 style="color: #554e6e;">About Johannes Vermeer:</h2>
+    <p>Johannes Vermeer, Johannes also rendered Jan, (baptized October 31, 1632, Delft, Netherlands—buried December 16, 1675, Delft), Dutch artist who created paintings that are among the most beloved and revered images in the history of art. Although only about 36 of his paintings survive, these rare works are among the greatest treasures in the world’s finest museums. Vermeer began his career in the early 1650s by painting large-scale biblical and mythological scenes, but most of his later paintings—the ones for which he is most famous—depict scenes of daily life in interior settings. These works are remarkable for their purity of light and form, qualities that convey a serene, timeless sense of dignity. Vermeer also painted cityscapes and allegorical scenes. Delft, where Vermeer was born and spent his artistic career, was an active and prosperous place in the mid-17th century, its wealth based on its thriving delftware factories, tapestry-weaving ateliers, and breweries. Within Delft’s city walls were picturesque canals and a large market square, which was flanked by the imposing town hall and the soaring steeple of the Nieuwe Kerk (“New Church”). It was also a venerable city with a long and distinguished past. Delft’s strong fortifications, city walls, and medieval gates had furnished defense for more than three centuries and, during the Dutch revolt against Spanish control, had provided refuge for William I, prince of Orange, from 1572 until his death in 1584.</p>
+    <h2 style="color: #554e6e;">Famous Paintings:</h2>
+    <a href="girlpearl.html"><img src="girlpearlJV.jpg" class="JVimg"></a>
+    <h4 style="color: #554e6e; text-align: center;">Girl with a Pearl Earring</h4>
+    <a href="artpainting.html"><img src="artpaintingJV.jpg" class="JVimg"></a>
+    <h4 style="color: #554e6e; text-align: center;">The Art of Painting</h4>
+  </div>
+</div>
+<div class="footer">
+  <h2 style="text-align: center;">Made by Nysa.P.Ginu(RA1711003010585) for Web Programming Lab 15IT304J.</h2>
+</body>
+</html>

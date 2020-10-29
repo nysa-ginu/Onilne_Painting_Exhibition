@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vincent</title>
+	<style type="text/css">
+	body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  padding: 80px;
+  text-align: center;
+  /* background: #1abc9c; */
+  color: white;
+  background-image: url("bg.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header_text{
+	background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  height:150px;
+  padding: 20px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden; 
+  background-color: #333; 
+}
+
+
+.navbar a {
+  float: left;
+  display: block; 
+  color: white;
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none;
+  width: 25%;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #FFDAB9; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: #c8a2c8; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+
+.VVGimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+</style>
+</head>
+<body>
+	<div class="header"></div>
+<div class="header_text">
+  <h1>Blah Blah Painting Exhibition</h1>
+  <p>All the sought-after paintings just a click away.</p>
+</div>
+<div class="navbar">
+  <a href="LDV.html">Leonardo Da Vinci</a>
+  <a href="MainPage.html">Back To Home</a>
+  <a href="JV.html">Johannes Vermeer</a>
+  <a href="AA.html">Albrecht Altdorfer</a>
+</div>
+<div class="row">
+  <div class="side">
+  	<h2 style="color: #c8a2c8">About The Curator:</h2>
+    <img src="curator.jpg" alt="Image of the curator" width=200px height=200px>
+    <p>A doctoral degree gold medalist in art history from University of Cambridge and have been working with Victoria and Albert Museum in London for the past 17 years.</p>
+    <h3 style="color: #c8a2c8">Favourite Paintings:</h3>
+    <p>Our Curator has very unique taste in painting with array of contemporary and abstract paintings.</p>
+    <img src="tuscany.jpg" alt="Tuscany" width=350px height=200px>
+    <img src="girl in the river.jpg" alt="Girl in the river" width=200px height=200px>
+    <img src="girls.jpg" alt="girls" width=200px height=200px>
+  </div>
+  <div class="main">
+    <h2 style="color: #554e6e;">About Vincent van Gogh:</h2>
+    <p>Vincent van Gogh was a post-Impressionist painter whose work — notable for its beauty, emotion and color — highly influenced 20th-century art. He struggled with mental illness and remained poor and virtually unknown throughout his life. Van Gogh was born on March 30, 1853, in Groot-Zundert, Netherlands. Van Gogh’s father, Theodorus van Gogh, was an austere country minister, and his mother, Anna Cornelia Carbentus, was a moody artist whose love of nature, drawing and watercolors was transferred to her son. Van Gogh was born exactly one year after his parents' first son, also named Vincent, was stillborn. At a young age — with his name and birthdate already etched on his dead brother's headstone — van Gogh was melancholy. At age 15, van Gogh's family was struggling financially, and he was forced to leave school and go to work. He got a job at his Uncle Cornelis' art dealership, Goupil & Cie., a firm of art dealers in The Hague. By this time, van Gogh was fluent in French, German and English, as well as his native Dutch. In June of 1873, van Gogh was transferred to the Groupil Gallery in London. There, he fell in love with English culture. He visited art galleries in his spare time, and also became a fan of the writings of Charles Dickens and George Eliot.</p>
+    <h2 style="color: #554e6e;">Famous Paintings:</h2>
+    <a href="starrynight.html"><img src="starrynightVVG.jpg" class="VVGimg"></a>
+    <h4 style="color: #554e6e; text-align: center;">The Starry Night</h4>
+    <a href="cafeterrace.html"><img src="cafeterraceVVG.jpg" class="VVGimg"></a>
+    <h4 style="color: #554e6e; text-align: center;">Cafe Terrace at Night</h4>
+  </div>
+</div>
+<div class="footer">
+  <h2 style="text-align: center;">Made by Nysa.P.Ginu(RA1711003010585) for Web Programming Lab 15IT304J.</h2>
+</body>
+</html>
